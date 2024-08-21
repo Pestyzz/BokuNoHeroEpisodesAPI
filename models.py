@@ -7,6 +7,7 @@ class Episode(BaseModel):
     season: int
     episode_number: float
     synopsis: str = "N/A"
+    image: str
 
 class Season(BaseModel):
     id: int
