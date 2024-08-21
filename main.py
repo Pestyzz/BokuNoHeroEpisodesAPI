@@ -24,7 +24,7 @@ def get_season(season_id: int, language: str = Query("es", enum=["es", "en"])):
         return season
     raise HTTPException(status_code=404, detail="Season not found")
 
-@app.get("/episodes/{episode_number}", response_model=Episode)
+@app.get("/episode/{episode_number}", response_model=Episode)
 def get_episode(episode_number: float, language: str = Query("es", enum=["es", "en"])):
     if language not in data:
         raise HTTPException(status_code=400, detail="Language not supported")
