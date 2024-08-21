@@ -3,9 +3,9 @@ from typing import List
 
 class Episode(BaseModel):
     id: str
-    episode_number: float
     title: str
     season: int
+    episode_number: float
     synopsis: str = "N/A"
     image: str
     watch_url: str
