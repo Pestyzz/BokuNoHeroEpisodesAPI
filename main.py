@@ -2,7 +2,6 @@ from fastapi import FastAPI, Query, HTTPException
 from models import Season, Episode, List
 import es_seasons, en_seasons
 
-
 app = FastAPI()
 
 data = {
